@@ -42,6 +42,11 @@ class RendezvousClient:
             "port": self.listen_port,
             "ttl": self.ttl,
         })
+
+        if self.meu_ip is None:
+            log.info("NAT: %s é o IP visto pelo servidor; conexões de entrada só "
+                     "funcionam com a porta %s acessível/encaminhada", r["ip"], self.listen_port)
+            
         self.meu_ip = r["ip"]
         log.info("registered %s@%s as %s:%s (ttl=%s)",
                  self.name, self.namespace, r["ip"], r["port"], r["ttl"])
