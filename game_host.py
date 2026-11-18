@@ -110,7 +110,7 @@ class GameHost:
                 lives=self.lives,
                 word_length=len(self.hangman.word),
                 word_hash=self.hangman.word_hash,
-                turn_timeout=self.turn_timeout,
+                turn_timeout=int(self.turn_timeout),
             )
             self._send_state(None)                            # seq=1
             self._start_turn_timer()
