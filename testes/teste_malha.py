@@ -3,7 +3,7 @@ import sys
 import time
 
 from rendezvous_connection import RendezvousClient
-from rdv_worker_snippet import RendezvousWorker
+from rendezvous_connection import RendezvousWorker
 from peer_connection import PeerServer
 from keep_alive import KeepAlive
 from peer_table import PeerTable
