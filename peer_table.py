@@ -1,3 +1,12 @@
+"""
+Projeto: Jogo da Forca P2P (PyP2P-Forca)
+Grupo: 13
+Integrantes:
+  - Lucas Galvão Wosiach -190128828
+  - Samuel Henrique Fernandes Silva - 252001163 
+"""
+
+
 import logging
 import threading
 import time
